@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aishwarya Hiremath - Cybersecurity Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#64748b'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        input:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen">
+        <!-- Hero Section -->
+        <div class="relative bg-gradient-to-r from-blue-50 to-blue-100 overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://readdy.ai/api/search-image?query=abstract%2520digital%2520cybersecurity%2520background%2520with%2520blue%2520technology%2520elements%252C%2520code%2520patterns%252C%2520and%2520network%2520connections%2520on%2520a%2520light%2520blue%2520gradient%2520background%252C%2520professional%2520looking%252C%2520subtle%2520design%252C%2520not%2520too%2520busy%252C%2520perfect%2520for%2520a%2520portfolio%2520hero%2520section&width=1200&height=600&seq=1&orientation=landscape')] bg-right bg-no-repeat bg-cover opacity-80"></div>
+            <div class="container mx-auto px-6 py-20 relative z-10">
+                <div class="max-w-2xl">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Aishwarya Hiremath</h1>
+                    <h2 class="text-xl md:text-2xl font-medium text-gray-700 mb-6">Cybersecurity Enthusiast</h2>
+                    <div class="flex items-center text-gray-600 mb-8">
+                        <div class="w-5 h-5 flex items-center justify-center mr-2">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <span>Bengaluru, India</span>
+                    </div>
+                    <p class="text-gray-700 text-lg mb-8 leading-relaxed">
+                        Passionate about defending digital systems and solving complex security challenges. 
+                        Committed to continuous learning and hands-on practice in the ever-evolving field of cybersecurity.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="bg-primary text-white px-6 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-blue-600 transition duration-300">
+                            Contact Me
+                        </button>
+                        <button class="bg-white text-primary px-6 py-3 font-medium border border-primary !rounded-button whitespace-nowrap hover:bg-blue-50 transition duration-300">
+                            View Resume
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">About Me</h2>
+                <div class="max-w-4xl">
+                    <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                        I'm Aishwarya Hiremath, a cybersecurity enthusiast from Bengaluru with a passion for defending digital systems against threats. My journey in cybersecurity began with a fascination for how systems work and how they can be protected from malicious actors.
+                    </p>
+                    <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                        My goal is to become a recognized cybersecurity expert by continuously improving my skills in network security, penetration testing, and vulnerability analysis. I believe in the importance of both theoretical knowledge and practical experience, which is why I focus on hands-on projects alongside my formal education.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-12">Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Skill 1 -->
+                    <div class="bg-white p-8 rounded shadow-sm skill-card transition duration-300">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="ri-code-line text-primary ri-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Programming</h3>
+                        <p class="text-gray-600">
+                            Proficient in Python for developing security tools like port scanners, password checkers, and packet sniffers. Familiar with scripting for automation of security tasks.
+                        </p>
+                    </div>
+
+                    <!-- Skill 2 -->
+                    <div class="bg-white p-8 rounded shadow-sm skill-card transition duration-300">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="ri-shield-check-line text-primary ri-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Network Security</h3>
+                        <p class="text-gray-600">
+                            Understanding of network vulnerabilities, firewall configurations, intrusion detection systems, and defense mechanisms to protect against unauthorized access.
+                        </p>
+                    </div>
+
+                    <!-- Skill 3 -->
+                    <div class="bg-white p-8 rounded shadow-sm skill-card transition duration-300">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="ri-bug-line text-primary ri-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Ethical Hacking</h3>
+                        <p class="text-gray-600">
+                            Experience in penetration testing and vulnerability analysis to identify security weaknesses before they can be exploited by malicious actors.
+                        </p>
+                    </div>
+
+                    <!-- Skill 4 -->
+                    <div class="bg-white p-8 rounded shadow-sm skill-card transition duration-300">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="ri-terminal-box-line text-primary ri-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Operating Systems</h3>
+                        <p class="text-gray-600">
+                            Proficient in Linux environments, essential for cybersecurity tasks. Familiar with command-line operations and system administration.
+                        </p>
+                    </div>
+
+                    <!-- Skill 5 -->
+                    <div class="bg-white p-8 rounded shadow-sm skill-card transition duration-300">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="ri-brain-line text-primary ri-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Problem-Solving</h3>
+                        <p class="text-gray-600">
+                            Strong analytical skills with the ability to approach security challenges methodically and develop effective solutions.
+                        </p>
+                    </div>
+
+                    <!-- Skill 6 -->
+                    <div class="bg-white p-8 rounded shadow-sm skill-card transition duration-300">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="ri-file-search-line text-primary ri-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Security Analysis</h3>
+                        <p class="text-gray-600">
+                            Ability to analyze security incidents, identify root causes, and recommend appropriate countermeasures to prevent future occurrences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-12">Certifications</h2>
+                <div class="max-w-4xl">
+                    <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm mb-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-6">
+                                <i class="ri-award-line text-primary ri-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Introduction to Cyber Security</h3>
+                                <p class="text-gray-600 mb-2">Cisco Networking Academy</p>
+                                <p class="text-gray-500 text-sm">Completed in 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-6">
+                                <i class="ri-award-line text-primary ri-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">NDG Linux Essentials</h3>
+                                <p class="text-gray-600 mb-2">Python Institute</p>
+                                <p class="text-gray-500 text-sm">Completed in 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-12">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden project-card transition duration-300">
+                        <div class="h-48 bg-[url('https://readdy.ai/api/search-image?query=network%2520port%2520scanner%2520visualization%2520with%2520digital%2520interface%2520showing%2520port%2520status%252C%2520professional%2520cybersecurity%2520tool%252C%2520clean%2520design%2520with%2520blue%2520and%2520white%2520color%2520scheme%252C%2520technical%2520but%2520elegant%2520appearance&width=600&height=400&seq=2&orientation=landscape')] bg-cover bg-center"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Port Scanner</h3>
+                            <div class="flex items-center mb-3">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-tools-line text-gray-500"></i>
+                                </div>
+                                <span class="text-gray-600 text-sm">Python</span>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                A comprehensive tool that scans TCP and UDP ports to identify open services and potential vulnerabilities in network systems.
+                            </p>
+                            <button class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap hover:text-blue-700 transition duration-300">
+                                View Project
+                                <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden project-card transition duration-300">
+                        <div class="h-48 bg-[url('https://readdy.ai/api/search-image?query=password%2520strength%2520checker%2520interface%2520with%2520security%2520meter%2520showing%2520password%2520evaluation%252C%2520professional%2520cybersecurity%2520tool%252C%2520clean%2520design%2520with%2520blue%2520and%2520white%2520color%2520scheme%252C%2520technical%2520but%2520elegant%2520appearance&width=600&height=400&seq=3&orientation=landscape')] bg-cover bg-center"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Password Strength Checker</h3>
+                            <div class="flex items-center mb-3">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-tools-line text-gray-500"></i>
+                                </div>
+                                <span class="text-gray-600 text-sm">Python</span>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                An application that evaluates password strength based on multiple criteria and provides feedback for improvement.
+                            </p>
+                            <button class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap hover:text-blue-700 transition duration-300">
+                                View Project
+                                <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden project-card transition duration-300">
+                        <div class="h-48 bg-[url('https://readdy.ai/api/search-image?query=network%2520packet%2520sniffer%2520visualization%2520showing%2520data%2520packets%2520being%2520captured%2520and%2520analyzed%252C%2520professional%2520cybersecurity%2520tool%252C%2520clean%2520design%2520with%2520blue%2520and%2520white%2520color%2520scheme%252C%2520technical%2520but%2520elegant%2520appearance&width=600&height=400&seq=4&orientation=landscape')] bg-cover bg-center"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Network Packet Sniffer</h3>
+                            <div class="flex items-center mb-3">
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-tools-line text-gray-500"></i>
+                                </div>
+                                <span class="text-gray-600 text-sm">Python (scapy)</span>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                A tool that captures and analyzes network traffic to identify patterns, protocols, and potential security issues.
+                            </p>
+                            <button class="text-primary font-medium flex items-center !rounded-button whitespace-nowrap hover:text-blue-700 transition duration-300">
+                                View Project
+                                <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Approach and Goals Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Approach -->
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-8">Approach to Cybersecurity</h2>
+                        <ul class="space-y-4">
+                            <li class="flex">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
+                                    <i class="ri-book-open-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Continuous Learning</h3>
+                                    <p class="text-gray-600">Staying updated on the latest cybersecurity trends, threats, and defense mechanisms.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
+                                    <i class="ri-tools-fill text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Hands-On Practice</h3>
+                                    <p class="text-gray-600">Testing and building tools to gain practical experience in identifying and mitigating security risks.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
+                                    <i class="ri-shield-user-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Ethical Responsibility</h3>
+                                    <p class="text-gray-600">Committed to ethical hacking standards and responsible disclosure of vulnerabilities.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
+                                    <i class="ri-team-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Collaboration</h3>
+                                    <p class="text-gray-600">Working with others to solve complex security issues and share knowledge within the community.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Goals -->
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-8">Future Goals</h2>
+                        <ul class="space-y-4">
+                            <li class="flex">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
+                                    <i class="ri-award-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Certifications</h3>
+                                    <p class="text-gray-600">Obtain industry-recognized certifications including CompTIA Security+, CEH, and eventually CISSP.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
+                                    <i class="ri-focus-3-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Specialization</h3>
+                                    <p class="text-gray-600">Develop deeper expertise in network security and penetration testing methodologies.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
+                                    <i class="ri-community-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Community Contribution</h3>
+                                    <p class="text-gray-600">Share knowledge through blog posts, open-source tools, and participation in security communities.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3 mt-0.5">
+                                    <i class="ri-building-line text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Professional Growth</h3>
+                                    <p class="text-gray-600">Work with leading organizations to tackle challenging security problems and make a meaningful impact.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Me Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Why Choose Me</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-8 rounded shadow-sm text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="ri-heart-pulse-line text-primary ri-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Passion</h3>
+                        <p class="text-gray-600">
+                            Driven by a genuine interest in cybersecurity and protecting digital assets from threats.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded shadow-sm text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="ri-shuffle-line text-primary ri-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Adaptability</h3>
+                        <p class="text-gray-600">
+                            Quick to learn new technologies and methodologies in the rapidly evolving security landscape.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded shadow-sm text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="ri-zoom-in-line text-primary ri-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Attention to Detail</h3>
+                        <p class="text-gray-600">
+                            Focus on the small details that can make a significant difference in security outcomes.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded shadow-sm text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="ri-building-2-line text-primary ri-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Solid Foundation</h3>
+                        <p class="text-gray-600">
+                            Built a strong technical foundation ready to take on complex security challenges.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Let's Connect</h2>
+                <p class="text-gray-700 text-lg mb-10">
+                    Cybersecurity is my passion, and I am excited to grow in this field. I look forward to contributing to the community and making a difference in the digital security landscape.
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                        <i class="ri-linkedin-fill text-gray-700 ri-xl"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                        <i class="ri-github-fill text-gray-700 ri-xl"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                        <i class="ri-twitter-x-fill text-gray-700 ri-xl"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                        <i class="ri-mail-fill text-gray-700 ri-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Get In Touch</h2>
+                    <form class="bg-white rounded-lg shadow-sm p-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-2 focus:ring-primary/20 transition duration-300" placeholder="Your name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-2 focus:ring-primary/20 transition duration-300" placeholder="Your email">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-2 focus:ring-primary/20 transition duration-300" placeholder="Subject">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-2 focus:ring-primary/20 transition duration-300" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary text-white px-6 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-blue-600 transition duration-300 w-full md:w-auto">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-6 md:mb-0">
+                        <h2 class="text-2xl font-['Pacifico'] mb-2">Aishwarya Hiremath</h2>
+                        <p class="text-gray-400">Cybersecurity Professional</p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <div class="w-5 h-5 flex items-center justify-center">
+                                <i class="ri-linkedin-fill"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <div class="w-5 h-5 flex items-center justify-center">
+                                <i class="ri-github-fill"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <div class="w-5 h-5 flex items-center justify-center">
+                                <i class="ri-twitter-x-fill"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <div class="w-5 h-5 flex items-center justify-center">
+                                <i class="ri-mail-fill"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <hr class="border-gray-700 my-8">
+                <div class="text-center text-gray-400 text-sm">
+                    <p>&copy; 2025 Aishwarya Hiremath. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
